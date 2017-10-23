@@ -1,0 +1,16 @@
+<div class="sai" >
+<div>
+<h1>
+  To-Do-App
+</h1>
+
+<input class="prakash" type="text" [(ngModel)]="newItem"   placeholder="Add task"/>
+<button class="reddy" (click)="addItem()">Add Task</button>
+</div>
+<ul>
+  <li *ngFor="let i of items; let ind=index">
+    {{i}}
+    <span class="clsoe" (click)="removeItem(ind)">x</span>
+</li>
+</ul>
+</div>
